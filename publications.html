@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications • Biomedical Engineering Research Group</title>
+  <meta name="description" content="Publications from the Biomedical Engineering Research Group">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.svg">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="Group Logo" class="logo">
+        <span>Biomedical Engineering Research Group</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open Menu" aria-expanded="false">&#9776;</button>
+      <nav class="menu">
+        <a href="index.html">Home</a> 
+        <a href="mission.html">Mission & Vision</a> 
+        <a href="who-we-are.html">Who We Are</a> 
+        <a href="subgroups.html">Subgroups</a> 
+        <a href="publications.html" class="active">Publications</a> 
+        <a href="events.html">Events</a> 
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="container">
+      <h1>Publications</h1>
+      <p class="lead">Selected publications from our group. Replace the placeholders with your entries and links to journals, DOIs, or preprints.</p>
+    </section>
+
+    <section class="container card" style="margin-top:1rem">
+      <h2 style="margin-top:0">How to add items</h2>
+      <ol>
+        <li>Group by year (latest first).</li>
+        <li>Use author initials or full names consistently.</li>
+        <li>Link to DOI, journal page, or PDF.</li>
+      </ol>
+    </section>
+
+    <section class="container" aria-labelledby="y2025">
+      <h2 id="y2025">2025</h2>
+      <ul class="news">
+        <li>
+          <strong>[Author A], [Author B]</strong>. <em>[Paper Title]</em>. [Journal/Conference], 2025. 
+          <a href="[DOI-or-PDF-link]" target="_blank" rel="noopener">Link</a>
+        </li>
+        <li>
+          <strong>[Author C], [Author D]</strong>. <em>[Paper Title]</em>. [Journal/Conference], 2025. 
+          <a href="[DOI-or-PDF-link]" target="_blank" rel="noopener">Link</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container" aria-labelledby="y2024">
+      <h2 id="y2024">2024</h2>
+      <ul class="news">
+        <li>
+          <strong>[Authors]</strong>. <em>[Paper Title]</em>. [Journal], 2024. 
+          <a href="[DOI-or-PDF-link]" target="_blank" rel="noopener">Link</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container" aria-labelledby="y2023">
+      <h2 id="y2023">2023</h2>
+      <ul class="news">
+        <li>
+          <strong>[Authors]</strong>. <em>[Paper Title]</em>. [Conference], 2023. 
+          <a href="[DOI-or-PDF-link]" target="_blank" rel="noopener">Link</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Biomedical Engineering Research Group • All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.menu');
+    if(toggle && menu){ toggle.addEventListener('click', ()=>{ 
+      const open = menu.classList.toggle('open'); 
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false'); 
+    });}
+  </script>
+</body>
+</html>

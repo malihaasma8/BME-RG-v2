@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events • Biomedical Engineering Research Group</title>
+  <meta name="description" content="Seminars, workshops, and events by the Biomedical Engineering Research Group">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.svg">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="Group Logo" class="logo">
+        <span>Biomedical Engineering Research Group</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open Menu" aria-expanded="false">&#9776;</button>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="mission.html">Mission & Vision</a>
+        <a href="whoweare.html">Who We Are</a>
+        <a href="subgroups.html">Subgroups</a>
+        <a href="currentprojects.html">Current Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="events.html">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="container">
+      <h1>Events & Seminars</h1>
+      <p class="lead">Upcoming and past activities of the Biomedical Engineering Research Group.</p>
+    </section>
+
+    <section class="container cards" aria-labelledby="upcoming">
+      <h2 id="upcoming" style="grid-column:1/-1">Upcoming</h2>
+
+      <article class="card">
+        <h3>[Seminar Title]</h3>
+        <p><strong>Date:</strong> [Day, DD Month YYYY] &nbsp; • &nbsp; <strong>Time:</strong> [HH:MM]</p>
+        <p><strong>Speaker:</strong> [Name, Affiliation]</p>
+        <p><strong>Venue:</strong> [Building/Room or Online]</p>
+        <p class="muted">Abstract: [2–3 lines abstract]</p>
+        <p><a class="btn" href="[Registration-or-Calendar-Link]" target="_blank" rel="noopener">Register</a></p>
+      </article>
+
+      <article class="card">
+        <h3>[Workshop Title]</h3>
+        <p><strong>Date:</strong> [Day, DD Month YYYY] &nbsp; • &nbsp; <strong>Time:</strong> [HH:MM]</p>
+        <p><strong>Facilitator:</strong> [Name]</p>
+        <p><strong>Venue:</strong> [Building/Room or Online]</p>
+        <p class="muted">Details: [brief description]</p>
+        <p><a class="btn" href="[Registration-or-Calendar-Link]" target="_blank" rel="noopener">Register</a></p>
+      </article>
+    </section>
+
+    <section class="container" aria-labelledby="past">
+      <h2 id="past">Past Events</h2>
+      <ul class="news">
+        <li>
+          <strong>[Seminar Title]</strong> — [Speaker], [Affiliation]. <em>[DD Mon YYYY]</em>. 
+          <a href="[Slides-or-Recording-Link]" target="_blank" rel="noopener">Slides/Recording</a>
+        </li>
+        <li>
+          <strong>[Symposium / Panel]</strong> — [Panelists]. <em>[DD Mon YYYY]</em>. 
+          <a href="[Slides-or-Recording-Link]" target="_blank" rel="noopener">Summary</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Biomedical Engineering Research Group • All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.menu');
+    if(toggle && menu){ toggle.addEventListener('click', ()=>{ 
+      const open = menu.classList.toggle('open'); 
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false'); 
+    });}
+  </script>
+</body>
+</html>
