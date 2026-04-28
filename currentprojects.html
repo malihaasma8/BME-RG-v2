@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Current Projects - Biomedical Engineering Research Group</title>
-    <link rel="stylesheet" href="style.css"> <!-- optional if you use a common CSS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Current Projects • Biomedical Engineering Research Group</title>
+  <meta name="description" content="Ongoing research projects from the Biomedical Engineering Research Group">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.png">
 </head>
 <body>
-    <header>
-        <h1>Current Projects</h1>
-        <nav>
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="mission.html">Mission & Vision</a>
-                <a href="whoweare.html">Who We Are</a>
-                <a href="subgroups.html">Subgroups</a>
-                <a href="currentprojects.html">Subgroups</a>
-                <a href="publications.html">Publications</a>
-                <a href="events.html">Events</a>
-                <a href="#contact">Contact</a>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Group Logo" class="logo">
+        <span>Biomedical Engineering Research Group</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open Menu" aria-expanded="false">&#9776;</button>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="mission.html">Mission & Vision</a>
+        <a href="who-we-are.html">Who We Are</a>
+        <a href="subgroups.html">Subgroups</a>
+        <a href="currentprojects.html" class="active">Current Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="events.html">Events</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="site-main">
+    <section class="container">
+      <h1>Current Projects</h1>
+      <p class="lead">Ongoing research initiatives within the Biomedical Engineering Research Group, including project leads, collaborators, objectives, and outcomes.</p>
+    </section>
+    <section class="container cards" aria-labelledby="projects">
+      <h2 id="projects" style="grid-column:1/-1">Ongoing Research Initiatives</h2>
 
-    <main>
-        <section>
-            <h2>Ongoing Research Initiatives</h2>
-            <p>Here you can list all the ongoing projects within the Biomedical Engineering Research Group, including project leads, collaborators, objectives, and outcomes.</p>
-            
-            <div class="project">
-                <h3>1. Smart Biomedical Sensor System</h3>
-                <p>Developing advanced biomedical sensors for physiological signal monitoring and data analysis.</p>
-            </div>
+      <article class="card">
+        <h3>Smart Biomedical Sensor System</h3>
+        <p>Developing advanced biomedical sensors for physiological signal monitoring and data analysis.</p>
+        <p><strong>Lead:</strong> [Project Lead Name]</p>
+        <p><strong>Collaborators:</strong> [Names / Institutions]</p>
+        <p class="muted">Status: Ongoing</p>
+      </article>
 
-            <div class="project">
-                <h3>2. AI-based Bird Sound Classification</h3>
-                <p>Applying machine learning to analyze and classify bird sounds for biodiversity studies in Qatar.</p>
-            </div>
-        </section>
-    </main>
+      <article class="card">
+        <h3>AI-based Bird Sound Classification</h3>
+        <p>Applying machine learning to analyze and classify bird sounds for biodiversity studies in Qatar.</p>
+        <p><strong>Lead:</strong> [Project Lead Name]</p>
+        <p><strong>Collaborators:</strong> [Names / Institutions]</p>
+        <p class="muted">Status: Ongoing</p>
+      </article>
 
-    <footer>
-        <p>&copy; 2025 Biomedical Engineering Research Group, Qatar University</p>
-    </footer>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Biomedical Engineering Research Group • All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.menu');
+    if(toggle && menu){ toggle.addEventListener('click', ()=>{ 
+      const open = menu.classList.toggle('open'); 
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false'); 
+    });}
+  </script>
 </body>
 </html>
